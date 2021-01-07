@@ -98,13 +98,14 @@ footer {
 }
 
 main {
-	width: 940px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 20px 0;
+	
 }
 
-form {
-	margin: 40px 0;
+.formulario {
+	width: 80%;
+	margin: 0 auto;
 }
 
 form label, form legend {
@@ -168,7 +169,11 @@ td, th {
 
 /* css da página inicial */
 .banner {
-	width:100%;
+	background-image: url(../images/banner.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-size: 100%;
 }
 
 .titulo-principal {
@@ -189,6 +194,7 @@ td, th {
 .principal p {
 	margin: 0 0 1em;
 }
+
 
 .principal strong {
 	font-weight: bold;
@@ -277,7 +283,7 @@ td, th {
 	}
 
 	nav {
-		position: static;
+		position: relative;
 	}
 
 	.lista-beneficios, .imagem-beneficios {

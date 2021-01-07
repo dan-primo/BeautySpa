@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>Contato | Beauty Spa</title>
 
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lora"
       rel="stylesheet"
@@ -26,7 +27,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="formulario">
       <form>
         <label for="nome-completo">Nome Completo</label>
         <input type="text" id="nome-completo" class="input-padrao" required />
@@ -95,9 +96,9 @@
         <fieldset>
           <legend>Qual horário prefere ser atendido?</legend>
           <select class="botao-horario">
-            <option>Manhã</option>
-            <option>Tarde</option>
-            <option>Noite</option>
+            <option value="Manhã" >Manhã</option>
+            <option value="Tarde" >Tarde</option>
+            <option value="Noite" >Noite</option>
           </select>
         </fieldset>
 
