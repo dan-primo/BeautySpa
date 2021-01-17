@@ -1,142 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contato | Beauty Spa</title>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Contato | Beauty Spa</title>
 
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="caixa">
-        <h1><img src="images/logo.png" alt="Logo do Beauty Spa" /></h1>
+      <link rel="stylesheet" href="styles/reset.css" />
+      <link rel="stylesheet" href="styles/style.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <header>
+        <div class="caixa">
+          <h1><img src="images/logo.png" alt="Logo do Beauty Spa" /></h1>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <main class="formulario">
-      <form>
-        <label for="nome-completo">Nome Completo</label>
-        <input type="text" id="nome-completo" class="input-padrao" required />
+      <main class="formulario">
+        <form>
+          <label for="nome-completo">Nome Completo</label>
+          <input type="text" id="nome-completo" class="input-padrao" required />
 
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          class="input-padrao"
-          required
-          placeholder="seuemail@dominio.com"
-        />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input-padrao"
+            required
+            placeholder="seuemail@dominio.com"
+          />
 
-        <label for="telefone">Telefone</label>
-        <input
-          type="tel"
-          id="telefone"
-          class="input-padrao"
-          required
-          placeholder="(XX) XXXXX-XXXX"
-        />
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="input-padrao"
+            required
+            placeholder="(XX) XXXXX-XXXX"
+          />
 
-        <label for="mensagem">Mensagem</label>
-        <textarea
-          cols="70"
-          rows="10"
-          id="mensagem"
-          class="input-padrao"
-          required
-        ></textarea>
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
 
-        <fieldset>
-          <legend>Como prefere o nosso contato?</legend>
-          <label for="radio-email"
-            ><input
-              type="radio"
-              name="contato"
-              value="email"
-              id="radio-email"
-            />
-            Email</label
+          <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email"
+              ><input
+                type="radio"
+                name="contato"
+                value="email"
+                id="radio-email"
+              />
+              Email</label
+            >
+
+            <label for="radio-telefone"
+              ><input
+                type="radio"
+                name="contato"
+                value="telefone"
+                id="radio-telefone"
+              />
+              Telefone</label
+            >
+
+            <label for="radio-whatsapp"
+              ><input
+                type="radio"
+                name="contato"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />
+              WhatsApp</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select class="botao-horario">
+              <option value="Manhã">Manhã</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noite">Noite</option>
+            </select>
+          </fieldset>
+
+          <label class="checkbox"
+            ><input type="checkbox" checked />Gostaria de receber nossas
+            novidades por email?</label
           >
 
-          <label for="radio-telefone"
-            ><input
-              type="radio"
-              name="contato"
-              value="telefone"
-              id="radio-telefone"
-            />
-            Telefone</label
-          >
+          <input type="submit" value="Enviar formulário" class="enviar" />
+        </form>
 
-          <label for="radio-whatsapp"
-            ><input
-              type="radio"
-              name="contato"
-              value="whatsapp"
-              id="radio-whatsapp"
-              checked
-            />
-            WhatsApp</label
-          >
-        </fieldset>
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
 
-        <fieldset>
-          <legend>Qual horário prefere ser atendido?</legend>
-          <select class="botao-horario">
-            <option value="Manhã" >Manhã</option>
-            <option value="Tarde" >Tarde</option>
-            <option value="Noite" >Noite</option>
-          </select>
-        </fieldset>
-
-        <label class="checkbox"
-          ><input type="checkbox" checked />Gostaria de receber nossas novidades
-          por email?</label
-        >
-
-        <input type="submit" value="Enviar formulário" class="enviar" />
-      </form>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Dia</th>
-            <th>Horário</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Segunda</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Quarta</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Sexta</td>
-            <td>8h ~ 20h</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
-
-    <footer>
-      <img src="images/logo-branco.png" alt="Logo Copyright do Beauty Spa" />
-      <p class="copyright">&copy; Copyright Beauty Spa | 2020</p>
-    </footer>
-  </body>
+      <footer>
+        <img src="images/logo-branco.png" alt="Logo Copyright do Beauty Spa" />
+        <p class="copyright">&copy; Copyright Beauty Spa | 2020</p>
+      </footer>
+    </body>
+  </html>
 </html>
